@@ -63,3 +63,15 @@ The purpose of Skolify is to make university information easier for matric learn
 - CSS styling for the website
 - JavaScript functionality
 - Responsive website structure
+## Timeline and Milestones
+
+1. Select and research the project organisation
+2. Create the project proposal
+3. Plan the website structure and sitemap
+4. Research and prepare website content
+5. Create the five HTML pages
+6. Add CSS styling and JavaScript functionality
+7. Test the website and navigation
+8. Create and complete the README
+9. Upload the project to the private GitHub repository
+- 
