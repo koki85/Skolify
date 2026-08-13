@@ -1,0 +1,60 @@
+## Student Information
+
+Kelebogile Mashigo
+st10538157
+Module: WEDE5020
+Project: Skolify Website
+
+## Website Goals and Objectives
+
+The main goal of Skolify is to help matric learners find useful information about universities, courses, applications and funding opportunities in one website. The website is designed to make the university search process easier and more understandable for learners.
+
+The objectives of the website are to provide clear information, create simple navigation between pages, provide an enquiry form for questions, and provide contact and location information.
+
+## Key Features and Functionality
+
+* Five linked HTML pages
+* Home page with an introduction to Skolify
+* About Us page explaining the organisation, mission, vision and learners it helps
+* Universities and Courses page with university, course, application and funding information
+* Enquiry page with an enquiry form
+* Contact page with contact information, a contact form and location information
+* Consistent navigation menu across all pages
+* External CSS styling
+* JavaScript functionality
+* Responsive page structure for different screen sizes
+
+## Timeline and Milestones
+
+* Project proposal and organisation selection
+* Website sitemap and structure planning
+* Content research and sourcing
+* Creation of the five HTML pages
+* Creation and linking of the CSS stylesheet
+* Addition of JavaScript functionality
+* Testing of navigation and website functionality
+* Creation and completion of the README document
+* Uploading the project files to the private GitHub repository
+
+## Part 1 Details
+
+Part 1 focused on planning and developing the initial structure of the Skolify website. The project includes five main pages: Home, About Us, Universities & Courses, Enquiry and Contact. The pages were connected using HTML navigation links and uploaded to a private GitHub repository.
+
+## Changelog
+
+### Initial Version
+
+* Created the five main HTML pages
+* Added navigation between all pages
+* Added website content and page sections
+* Added external CSS styling
+* Added JavaScript file
+* Added enquiry and contact forms
+* Added contact and location information
+* Tested navigation between pages
+* Created and updated the README documentation
+* Uploaded the initial project files to GitHub
+
+## References
+
+Content and information used for the project were researched from reputable educational and public information sources. Images, icons and other resources should be credited according to the recognised referencing style required by the institution.
