@@ -50,3 +50,16 @@ All five pages were tested in the browser. The navigation links were checked to 
 ## Project Purpose
 
 The purpose of Skolify is to make university information easier for matric learners to find and understand while supporting them through their university application journey.
+
+## Key Features and Functionality
+
+- Five connected website pages
+- Home page introducing Skolify
+- About Us page explaining the purpose of the organisation
+- Universities and Courses page with university and course information
+- Enquiry form for learner questions
+- Contact page with contact details and location information
+- Consistent navigation across all pages
+- CSS styling for the website
+- JavaScript functionality
+- Responsive website structure
