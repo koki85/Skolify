@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Skolify</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Skolify</h1>
+        <p>Helping matric learners find their dream university.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Universities & Courses</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Website header and navigation -->
+    </header>
+
+<!-- Main enquiry form content -->
+    <main>
+
+        <section>
+            <h2>Send Us an Enquiry</h2>
+
+            <p>
+                Do you have a question about universities, courses
+                or applications? Complete the form below and send
+                us your enquiry.
+            </p>
+
+            <form>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" name="grade">
+
+                <br><br>
+
+                <label for="topic">What do you need help with?</label>
+                <select id="topic" name="topic">
+                    <option value="university">University information</option>
+                    <option value="courses">Courses</option>
+                    <option value="applications">University applications</option>
+                    <option value="funding">Student funding</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">Your Question:</label>
+                <br>
+                <textarea id="message" name="message" rows="6" cols="40"></textarea>
+
+                <br><br>
+
+                <button type="submit">Send Enquiry</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>&copy; 2026 Skolify. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
