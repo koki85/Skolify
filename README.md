@@ -93,8 +93,14 @@ Part 1 focused on planning and developing the initial structure of the Skolify w
 - Created and completed the README
 - Uploaded the project files to the private GitHub repository
 
-- ## References
+  ## References
 
-- South African university websites were consulted for general information about universities and courses.
-- Official university application and funding information was used when researching study opportunities.
-- All external information and resources used in the website should be credited appropriately in the final project submission.
+Department of Basic Education (2026) *How to apply: Applying for study at a tertiary institution*. Available at: https://www.education.gov.za/FurtherStudies/Howtoapply/tabid/344/Default.aspx (Accessed: 14 August 2026).
+
+Department of Basic Education (2026) *List of South African Universities*. Available at: https://www.education.gov.za/FurtherStudies/Universities.aspx (Accessed: 14 August 2026).
+
+National Student Financial Aid Scheme (NSFAS) (2026) *NSFAS*. Available at: https://www.nsfas.org.za/ (Accessed: 14 August 2026).
+
+National Student Financial Aid Scheme (NSFAS) (2026) *How to Apply*. Available at: https://www.nsfas.org.za/content/how-to-apply.html (Accessed: 14 August 2026).
+
+University of Pretoria (2026) *Undergraduate Degrees & Programmes*. Available at: https://www.up.ac.za/undergraduate (Accessed: 14 August 2026).
