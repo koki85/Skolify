@@ -92,3 +92,9 @@ Part 1 focused on planning and developing the initial structure of the Skolify w
 - Tested the website navigation
 - Created and completed the README
 - Uploaded the project files to the private GitHub repository
+
+- ## References
+
+- South African university websites were consulted for general information about universities and courses.
+- Official university application and funding information was used when researching study opportunities.
+- All external information and resources used in the website should be credited appropriately in the final project submission.
