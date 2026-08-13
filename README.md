@@ -78,3 +78,17 @@ The purpose of Skolify is to make university information easier for matric learn
 ## Part 1 Details
 
 Part 1 focused on planning and developing the initial structure of the Skolify website. The project includes five main pages: Home, About Us, Universities & Courses, Enquiry and Contact. The pages were connected using HTML navigation links and developed using HTML, CSS and JavaScript. The website was tested in the browser and the project files were uploaded to a private GitHub repository.
+
+## Changelog
+
+### Initial Version
+
+- Created the five main HTML pages
+- Added navigation between all pages
+- Added website content and page sections
+- Added CSS styling
+- Added JavaScript functionality
+- Added enquiry and contact forms
+- Tested the website navigation
+- Created and completed the README
+- Uploaded the project files to the private GitHub repository
