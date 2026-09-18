@@ -1,0 +1,194 @@
+/* Skolify Website Styles */
+
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172554;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #12356b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #0b2447;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2f6fbd;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #12356b;
+    margin-top: 0;
+}
+
+h3 {
+    color: #245aa5;
+}
+
+/* Links */
+a {
+    color: #1d5fa7;
+}
+
+a:hover {
+    color: #0b2447;
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 25px;
+}
+
+/* Forms */
+form {
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b7c3d4;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 22px;
+    background-color: #12356b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #245aa5;
+}
+
+/* Footer */
+footer {
+    background-color: #0b2447;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive design for tablets and phones */
+@media (max-width: 768px) {
+    header {
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+/* Smaller phone screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
