@@ -53,3 +53,8 @@ Skolify_Part_1_Submission/
 └── images/
     ├── README.md
     └── skolify-image.svg
+
+  ## References
+
+- W3Schools – HTML, CSS and JavaScript reference.
+- MDN Web Docs – HTML, CSS and JavaScript documentation.  
