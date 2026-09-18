@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <rect width="800" height="400" fill="#dbeafe"/>
+    <rect x="80" y="70" width="640" height="260" rx="20" fill="#ffffff"/>
+    <text x="400" y="170"
+          text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="60"
+          font-weight="bold"
+          fill="#12356b">
+        Skolify
+    </text>
+    <text x="400" y="230"
+          text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="25"
+          fill="#172554">
+        Your University Journey Starts Here
+    </text>
+</svg>
