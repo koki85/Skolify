@@ -1,88 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - Skolify</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Service Enquiry Portal | Keleboqile Mashigo Portfolio</title>
+    <!-- Core External Structural Production Stylesheet Link -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
     <header>
-        <h1>Skolify</h1>
-        <p>Helping matric learners find their dream university.</p>
-
+        <h1>Keleboqile Mashigo Portfolio</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Universities & Courses</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home Portfolio</a></li>
+                <li><a href="enquiry.html" class="active">Service Enquiry</a></li>
+                <li><a href="contact.html">Contact Headquarters</a></li>
+            </ul>
         </nav>
-
-        <!-- Website header and navigation -->
     </header>
 
-<!-- Main enquiry form content -->
     <main>
+        <section class="form-container">
+            <h2>Interactive Transaction & Service Enquiry</h2>
+            <p>Please populate the specific criteria fields below. Secure front-end constraints will validate all elements via an asynchronous pipeline.</p>
+            
+            <!-- Structural Presentation Form with Mandatory Requirements -->
+            <form id="enquiry-form">
+                <div class="form-group">
+                    <label for="client-name">Full Corporate or Personal Name:</label>
+                    <input type="text" id="client-name" name="client-name" required placeholder="Enter your full name">
+                    <span class="error-message">This field is mandatory and cannot be omitted.</span>
+                </div>
 
-        <section>
-            <h2>Send Us an Enquiry</h2>
+                <div class="form-group">
+                    <label for="client-email">Valid Electronic Mail Address:</label>
+                    <input type="email" id="client-email" name="client-email" required placeholder="name@domain.com">
+                    <span class="error-message">Please supply a syntactically accurate email address structure.</span>
+                </div>
 
-            <p>
-                Do you have a question about universities, courses
-                or applications? Complete the form below and send
-                us your enquiry.
-            </p>
+                <div class="form-group">
+                    <label for="service-tier">Select Requested Portfolio Development Tier:</label>
+                    <select id="service-tier" name="service-tier" required>
+                        <option value="">-- Choose an option --</option>
+                        <option value="frontend">Responsive Frontend Infrastructure Design</option>
+                        <option value="fullstack">Full-Stack Application Architecture and Delivery</option>
+                        <option value="seo">Search Engine Optimisation & Structural Auditing</option>
+                    </select>
+                    <span class="error-message">Please select a valid service option from the dropdown menu.</span>
+                </div>
 
-            <form>
+                <div class="form-group">
+                    <label for="project-spec">Detailed Project Architectural Specification:</label>
+                    <textarea id="project-spec" name="project-spec" rows="6" required placeholder="Outline your functional requirements in detail..."></textarea>
+                    <span class="error-message">Specification details must be provided to proceed.</span>
+                </div>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <br><br>
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <br><br>
-
-                <label for="grade">Grade:</label>
-                <input type="text" id="grade" name="grade">
-
-                <br><br>
-
-                <label for="topic">What do you need help with?</label>
-                <select id="topic" name="topic">
-                    <option value="university">University information</option>
-                    <option value="courses">Courses</option>
-                    <option value="applications">University applications</option>
-                    <option value="funding">Student funding</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <br><br>
-
-                <label for="message">Your Question:</label>
-                <br>
-                <textarea id="message" name="message" rows="6" cols="40"></textarea>
-
-                <br><br>
-
-                <button type="submit">Send Enquiry</button>
-
+                <button type="submit">Validate and Process Service Enquiry</button>
             </form>
         </section>
-
     </main>
 
-    <!-- Website footer -->
     <footer>
-        <p>&copy; 2026 Skolify. All rights reserved.</p>
+        <p>&copy; 2026 Keleboqile Mashigo (st10538157). WEDE5020 Portfolio of Evidence. All Rights Reserved.</p>
     </footer>
 
+    <!-- Core Interactive Logic Script Integration Layer -->
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
 </body>
-
 </html>
