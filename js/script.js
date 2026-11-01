@@ -29,11 +29,11 @@ function initAccordions() {
    2. DYNAMIC CONTENT SEARCH ENGINE
    -------------------------------------------------------------------------- */
 const platformData = [
-    { title: "University of Johannesburg", category: "University", desc: "Public university located in Johannesburg, South Africa." },
-    { title: "University of Pretoria", category: "University", desc: "Multi-campus public research university in Pretoria." },
-    { title: "University of Cape Town", category: "University", desc: "Highest ranked public research university in Africa." },
-    { title: "Information Technology", category: "Course", desc: "BSc and Diploma tracks focusing on development, networks, and databases." },
-    { title: "Business Management", category: "Course", desc: "Degrees covering management principles, economics, and logistics." }
+    { title: "University of Johannesburg", category: "University", desc: "Public university located in Johannesburg, South Africa.", image: "https://unsplash.com" },
+    { title: "University of Pretoria", category: "University", desc: "Multi-campus public research university in Pretoria.", image: "https://unsplash.com" },
+    { title: "University of Cape Town", category: "University", desc: "Highest ranked public research university in Africa.", image: "https://unsplash.com" },
+    { title: "Information Technology", category: "Course", desc: "BSc and Diploma tracks focusing on development, networks, and databases.", image: "https://unsplash.com" },
+    { title: "Business Management", category: "Course", desc: "Degrees covering management principles, economics, and logistics.", image: "https://unsplash.com" }
 ];
 
 function initDynamicSearch() {
@@ -65,6 +65,7 @@ function renderListings(items, container) {
         const card = document.createElement("div");
         card.className = "listing-card";
         card.innerHTML = `
+            <img src="${item.image}" alt="${item.title}" style="width:100%; height:160px; object-fit:cover; border-radius:6px; margin-bottom:12px;">
             <span style="font-size: 0.75rem; font-weight: bold; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius:4px;">${item.category}</span>
             <h3 style="margin: 5px 0; color: #12356b;">${item.title}</h3>
             <p style="margin: 0; font-size: 0.9rem; color: #172554;">${item.desc}</p>
@@ -72,6 +73,7 @@ function renderListings(items, container) {
         container.appendChild(card);
     });
 }
+
 
 /* --------------------------------------------------------------------------
    3. VISUAL LIGHTBOX MODAL CONFIGURATION
