@@ -1,91 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skolify helps matric learners find their dream university, explore technical courses, and plan their future career paths with simple tools.">
+    <meta name="keywords" content="Skolify, matric application, university courses, student funding, South Africa higher education">
     <title>Skolify - Your University Journey Starts Here</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-    <!-- Website header and navigation -->
     <header>
         <h1>Skolify</h1>
         <p>Helping matric learners find their dream university.</p>
+    </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Universities & Courses</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-            </header>
+    <nav>
+        <a href="index.html" style="background-color: #2f6fbd;">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Universities & Courses</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-            <!-- Main content of the homepage -->
-            <main>
-
-                <picture>
-            <img
-                src="images/skolify-image.svg"
-                srcset="images/skolify-image.svg 800w,
-                        images/skolify-image.svg 1200w"
-                sizes="(max-width: 30rem) 94vw,
-                    (max-width: 48rem) 92vw,
-                    90vw"
-                alt="Skolify university guidance website">
-        </picture>
-
+    <main>
         <section>
             <h2>Welcome to Skolify</h2>
-
-            <p>
-             Skolify is a website created to help matric learners
-              prepare for their university journey.
-            </p>
-
-            <p>
-                Find information about universities, courses,
-                applications and funding in one place.
-            </p>
-
-            <a href="services.html">Explore Universities and Courses</a>
-
+            <p>Find information about universities, courses, applications and funding all in one place. Use our real-time interactive search index module below to explore options instantly.</p>
         </section>
 
+        <!-- 2.2 Dynamic Content & Filter Element -->
         <section>
-            <h2>Why Use Skolify?</h2>
-
-            <ul>
-                <li>Find information about universities.</li>
-                <li>Learn about different courses.</li>
-                <li>Understand the university application process.</li>
-                <li>Find information about student funding.</li>
-                <li>Get help with your university questions.</li>
-            </ul>
+            <h2>Search Universities & Courses</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Type to filter... (e.g., Johannesburg, IT, Engineering)">
+            </div>
+            <div id="dynamic-results" class="dynamic-listing-grid">
+                <!-- Content will load dynamically from your script.js file -->
+            </div>
         </section>
 
+        <!-- 2.1 Interactive Element Accordions -->
         <section>
-            <h2>Start Planning Your Future</h2>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">When do university applications typically close? <span>+</span></button>
+                <div class="accordion-content">
+                    <p>Most public institutions in South Africa close their primary registration applications between August and October annually.</p>
+                </div>
+            </div>
 
-            <p>
-                Choosing a university is an important decision.
-                Skolify helps you find useful information so that
-                you can make better choices about your future.
-            </p>
-
-            <a href="enquiry.html">Ask Us a Question</a>
+            <div class="accordion-item">
+                <button class="accordion-header">What documents do I need to prepare? <span>+</span></button>
+                <div class="accordion-content">
+                    <p>You will standardly require a certified copy of your NSC matric results, certified ID document, and proof of residence.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- 2.1 Interactive Lightbox Gallery -->
+        <section>
+            <h2>Campus Visual Gallery</h2>
+            <p>Click any image below to view it inside a large interactive lightbox view.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://picsum.photos" alt="Main University Campus Administration Complex & Grounds">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos" alt="Modern Technical Science Laboratory and Research Center">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Website footer -->
     <footer>
         <p>&copy; 2026 Skolify. All rights reserved.</p>
     </footer>
 
+    <!-- Master Scripts Placement -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Enquiry Portal | Keleboqile Mashigo Portfolio</title>
-    <!-- Core External Structural Production Stylesheet Link -->
+    <meta name="description" content="Submit a custom service evaluation tier request or university course qualification inquiry directly to Skolify.">
+    <title>Service Enquiry Portal | Skolify</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Keleboqile Mashigo Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home Portfolio</a></li>
-                <li><a href="enquiry.html" class="active">Service Enquiry</a></li>
-                <li><a href="contact.html">Contact Headquarters</a></li>
-            </ul>
-        </nav>
+        <h1>Skolify</h1>
+        <p>Interactive Transaction & Service Enquiry</p>
     </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Universities & Courses</a>
+        <a href="enquiry.html" style="background-color: #2f6fbd;">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <main>
-        <section class="form-container">
+        <section>
             <h2>Interactive Transaction & Service Enquiry</h2>
-            <p>Please populate the specific criteria fields below. Secure front-end constraints will validate all elements via an asynchronous pipeline.</p>
+            <p>Please populate the specific criteria fields below. Front-end constraints will validate elements via an asynchronous pipeline.</p>
             
-            <!-- Structural Presentation Form with Mandatory Requirements -->
-            <form id="enquiry-form">
+            <form id="enquiry-form" novalidate>
                 <div class="form-group">
-                    <label for="client-name">Full Corporate or Personal Name:</label>
-                    <input type="text" id="client-name" name="client-name" required placeholder="Enter your full name">
-                    <span class="error-message">This field is mandatory and cannot be omitted.</span>
+                    <label for="fullName">Full Corporate or Personal Name:</label>
+                    <input type="text" id="fullName" name="fullName">
+                    <div class="error-message">This field is mandatory and cannot be omitted.</div>
                 </div>
 
                 <div class="form-group">
-                    <label for="client-email">Valid Electronic Mail Address:</label>
-                    <input type="email" id="client-email" name="client-email" required placeholder="name@domain.com">
-                    <span class="error-message">Please supply a syntactically accurate email address structure.</span>
+                    <label for="email">Valid Electronic Mail Address:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message">Please supply a syntactically accurate email address structure.</div>
                 </div>
 
                 <div class="form-group">
-                    <label for="service-tier">Select Requested Portfolio Development Tier:</label>
-                    <select id="service-tier" name="service-tier" required>
+                    <label for="tier">Select Requested Portfolio Development Tier:</label>
+                    <select id="tier" name="tier">
                         <option value="">-- Choose an option --</option>
-                        <option value="frontend">Responsive Frontend Infrastructure Design</option>
-                        <option value="fullstack">Full-Stack Application Architecture and Delivery</option>
-                        <option value="seo">Search Engine Optimisation & Structural Auditing</option>
+                        <option value="Responsive Frontend Design">Responsive Frontend Infrastructure Design</option>
+                        <option value="Full-Stack Application">Full-Stack Application Architecture and Delivery</option>
+                        <option value="SEO & Auditing">Search Engine Optimisation & Structural Auditing</option>
                     </select>
-                    <span class="error-message">Please select a valid service option from the dropdown menu.</span>
+                    <div class="error-message">Please select a valid service option from the dropdown menu.</div>
                 </div>
 
                 <div class="form-group">
-                    <label for="project-spec">Detailed Project Architectural Specification:</label>
-                    <textarea id="project-spec" name="project-spec" rows="6" required placeholder="Outline your functional requirements in detail..."></textarea>
-                    <span class="error-message">Specification details must be provided to proceed.</span>
+                    <label for="specification">Detailed Project Architectural Specification:</label>
+                    <textarea id="specification" name="specification"></textarea>
+                    <div class="error-message">Specification details must be provided to proceed.</div>
                 </div>
 
                 <button type="submit">Validate and Process Service Enquiry</button>
@@ -62,11 +63,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Keleboqile Mashigo (st10538157). WEDE5020 Portfolio of Evidence. All Rights Reserved.</p>
+        <p>&copy; 2026 Skolify. All rights reserved.</p>
     </footer>
 
-    <!-- Core Interactive Logic Script Integration Layer -->
-    <script src="js/main.js"></script>
-    <script src="js/validation.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

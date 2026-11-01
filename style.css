@@ -192,3 +192,128 @@ footer {
         width: 100%;
     }
 }
+/* ==========================================================================
+   WEDE5020 ENHANCEMENT SUITE STYLING (PART 3)
+   ========================================================================== */
+
+#interactive-map {
+    width: 100%;
+    height: 400px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+    display: none;
+}
+
+.error input, .error textarea, .error select {
+    border: 2px solid #dc2626 !important;
+    background-color: #fef2f2 !important;
+}
+
+.error .error-message {
+    display: block;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.dynamic-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.listing-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.accordion-item {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #f1f5f9;
+    color: #12356b;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0 !important;
+}
+
+.accordion-content {
+    padding: 15px;
+    background: #ffffff;
+    display: none;
+    border-top: 1px solid #cbd5e1;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.02);
+}
+
+#lightbox-overlay {
+    position: fixed;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(11, 36, 71, 0.9);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 99999; opacity: 0; pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+#lightbox-overlay.active {
+    opacity: 1; pointer-events: auto;
+}
+
+#lightbox-image {
+    max-width: 85%; max-height: 75vh; border-radius: 4px;
+}
+
+#lightbox-caption {
+    position: absolute; bottom: 40px; color: white; font-weight: bold;
+}
+
+#lightbox-close {
+    position: absolute; top: 20px; right: 30px; color: white; font-size: 2.5rem; cursor: pointer;
+}
