@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Skolify headquarters or track our physical office location layout instantly.">
     <title>Contact Headquarters | Skolify</title>
-    <!-- Leaflet Infrastructure Engine Style Layer Injection Links -->
     <link rel="stylesheet" href="https://unpkg.com" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="CSS/styles.css">
-
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #6788b3; color: #172554; line-height: 1.6; }
+        header { background-color: #12356b; color: white; text-align: center; padding: 30px 20px; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 8px 0 0; font-size: 1.1rem; }
+        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 15px; }
+        nav a { color: white; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: bold; }
+        nav a:hover { background-color: #2f6fbd; }
+        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        section { background-color: white; margin-bottom: 25px; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+        h2 { color: #12356b; margin-top: 0; }
+        form { max-width: 700px; }
+        .form-group { margin-bottom: 20px; position: relative; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #12356b; }
+        input, textarea { width: 100%; padding: 11px; border: 1px solid #b7c3d4; border-radius: 5px; font-size: 1rem; box-sizing: border-box; }
+        textarea { min-height: 130px; resize: vertical; }
+        button { margin-top: 18px; padding: 12px 22px; background-color: #12356b; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background-color: #245aa5; }
+        .error-message { color: #dc2626; font-size: 0.85rem; font-weight: bold; margin-top: 5px; display: none; }
+        .error input, .error textarea { border: 2px solid #dc2626 !important; background-color: #fef2f2 !important; }
+        .error .error-message { display: block; }
+        #interactive-map { width: 100%; height: 400px; background-color: #e2e8f0; border-radius: 8px; margin-top: 15px; z-index: 1; }
+        footer { background-color: #0b2447; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Skolify</h1>
         <p>Contact Headquarters Base</p>
     </header>
-
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -24,60 +43,44 @@
         <a href="enquiry.html">Enquiry</a>
         <a href="contact.html" style="background-color: #2f6fbd;">Contact</a>
     </nav>
-
     <main>
         <section>
             <h2>Contact Headquarters</h2>
             <p>Get in touch with us using the form below or locate our primary operational base via the interactive mapping engine.</p>
-            
             <form id="contact-form" novalidate>
                 <div class="form-group">
                     <label for="fullName">Your Full Name:</label>
                     <input type="text" id="fullName" name="fullName">
                     <div class="error-message">Name input is required.</div>
                 </div>
-
                 <div class="form-group">
                     <label for="email">Your Email Address:</label>
                     <input type="email" id="email" name="email">
                     <div class="error-message">A valid email address is required.</div>
                 </div>
-
                 <div class="form-group">
                     <label for="message">Message or Correspondence:</label>
                     <textarea id="message" name="message"></textarea>
                     <div class="error-message">Message content cannot be blank.</div>
                 </div>
-
                 <button type="submit">Send Message via AJAX</button>
             </form>
         </section>
-
-        <!-- 2.1 Library Map Container Anchor Point -->
         <section>
             <h2>Our Physical Location</h2>
             <div id="interactive-map"></div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Skolify. All rights reserved.</p>
-    </footer>
-
-    <!-- Leaflet GIS Maps Logic Base Distribution Modules -->
+    <footer><p>&copy; 2026 Skolify. All rights reserved.</p></footer>
     <script src="https://unpkg.com" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const container = document.getElementById("interactive-map");
             if (!container) return;
-            // Setup coordinates targeting Johannesburg region configuration
             const map = L.map('interactive-map').setView([-26.2041, 28.0473], 11);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-            }).addTo(map);
-            L.marker([-26.2041, 28.0473]).addTo(map)
-                .bindPopup('<strong>Skolify Headquarters</strong><br>Primary Operations Hub Hub.').openPopup();
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+            L.marker([-26.2041, 28.0473]).addTo(map).bindPopup('<strong>Skolify Headquarters</strong><br>Primary Operations Hub.').openPopup();
         });
     </script>
 </body>

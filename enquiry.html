@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Submit a custom service evaluation tier request or university course qualification inquiry directly to Skolify.">
     <title>Service Enquiry Portal | Skolify</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #6788b3; color: #172554; line-height: 1.6; }
+        header { background-color: #12356b; color: white; text-align: center; padding: 30px 20px; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 8px 0 0; font-size: 1.1rem; }
+        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 15px; }
+        nav a { color: white; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: bold; }
+        nav a:hover { background-color: #2f6fbd; }
+        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        section { background-color: white; margin-bottom: 25px; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+        h2 { color: #12356b; margin-top: 0; }
+        form { max-width: 700px; }
+        .form-group { margin-bottom: 20px; position: relative; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #12356b; }
+        input, textarea, select { width: 100%; padding: 11px; border: 1px solid #b7c3d4; border-radius: 5px; font-size: 1rem; box-sizing: border-box; }
+        textarea { min-height: 130px; resize: vertical; }
+        button { margin-top: 18px; padding: 12px 22px; background-color: #12356b; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background-color: #245aa5; }
+        .error-message { color: #dc2626; font-size: 0.85rem; font-weight: bold; margin-top: 5px; display: none; }
+        .error input, .error textarea, .error select { border: 2px solid #dc2626 !important; background-color: #fef2f2 !important; }
+        .error .error-message { display: block; }
+        footer { background-color: #0b2447; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Skolify</h1>
         <p>Interactive Transaction & Service Enquiry</p>
     </header>
-
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -22,25 +41,21 @@
         <a href="enquiry.html" style="background-color: #2f6fbd;">Enquiry</a>
         <a href="contact.html">Contact</a>
     </nav>
-
     <main>
         <section>
             <h2>Interactive Transaction & Service Enquiry</h2>
             <p>Please populate the specific criteria fields below. Front-end constraints will validate elements via an asynchronous pipeline.</p>
-            
             <form id="enquiry-form" novalidate>
                 <div class="form-group">
                     <label for="fullName">Full Corporate or Personal Name:</label>
                     <input type="text" id="fullName" name="fullName">
                     <div class="error-message">This field is mandatory and cannot be omitted.</div>
                 </div>
-
                 <div class="form-group">
                     <label for="email">Valid Electronic Mail Address:</label>
                     <input type="email" id="email" name="email">
                     <div class="error-message">Please supply a syntactically accurate email address structure.</div>
                 </div>
-
                 <div class="form-group">
                     <label for="tier">Select Requested Portfolio Development Tier:</label>
                     <select id="tier" name="tier">
@@ -51,22 +66,16 @@
                     </select>
                     <div class="error-message">Please select a valid service option from the dropdown menu.</div>
                 </div>
-
                 <div class="form-group">
                     <label for="specification">Detailed Project Architectural Specification:</label>
                     <textarea id="specification" name="specification"></textarea>
                     <div class="error-message">Specification details must be provided to proceed.</div>
                 </div>
-
                 <button type="submit">Validate and Process Service Enquiry</button>
             </form>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Skolify. All rights reserved.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Skolify. All rights reserved.</p></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
