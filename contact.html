@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Skolify headquarters or track our physical office location layout instantly.">
     <title>Contact Headquarters | Skolify</title>
-    <link rel="stylesheet" href="https://unpkg.com" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <style>
         * { box-sizing: border-box; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f4f8; color: #172554; line-height: 1.6; }
         header { background-color: #12356b; color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
         header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.9; }
-        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; }
-        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; }
-        nav a:hover { background-color: #2f6fbd; }
-        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: background 0.3s ease; }
+        nav a:hover, nav a.active { background-color: #2f6fbd; }
+        main { max-width: 1100px; width: 100%; margin: 30px auto; padding: 0 20px; }
         section { background-color: white; margin-bottom: 30px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
         h2 { color: #12356b; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
         form { max-width: 700px; margin: 0 auto; }
@@ -28,9 +27,14 @@
         .error-message { color: #dc2626; font-size: 0.85rem; font-weight: bold; margin-top: 6px; display: none; }
         .error input, .error textarea { border: 2px solid #dc2626 !important; background-color: #fef2f2 !important; }
         .error .error-message { display: block; }
-        #interactive-map { width: 100%; height: 400px; background-color: #e2e8f0; border-radius: 8px; margin-top: 15px; z-index: 1; border: 2px solid #cbd5e1; }
-        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; }
-        @media (max-width: 768px) { nav { flex-direction: column; text-align: center; } }
+        #interactive-map { width: 100%; height: 400px; background-color: #e2e8f0; border-radius: 8px; margin-top: 15px; border: 2px solid #cbd5e1; }
+        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-direction: column; align-items: stretch; text-align: center; }
+            main { padding: 0 15px; }
+            section { padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
         <a href="about.html">About Us</a>
         <a href="services.html">Universities & Courses</a>
         <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html" style="background-color: #2f6fbd;">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
     </nav>
     <main>
         <section>
@@ -70,20 +74,17 @@
         </section>
         <section>
             <h2>Our Physical Location</h2>
-            <div id="interactive-map"></div>
+            <iframe
+                id="interactive-map"
+                title="Map centered on Johannesburg, South Africa"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=27.95%2C-26.28%2C28.15%2C-26.12&amp;layer=mapnik&amp;marker=-26.2041%2C28.0473"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>The map is centered on Johannesburg. Contact us for the exact location of any in-person meeting.</p>
         </section>
     </main>
     <footer><p>&copy; 2026 Skolify. Developed by Keleboqile Mashigo (st10538157). All rights reserved.</p></footer>
-    <script src="https://unpkg.com" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const container = document.getElementById("interactive-map");
-            if (!container) return;
-            const map = L.map('interactive-map').setView([-26.2041, 28.0473], 11);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
-            L.marker([-26.2041, 28.0473]).addTo(map).bindPopup('<strong>Skolify Headquarters</strong><br>Primary Operations Hub.').openPopup();
-        });
-    </script>
 </body>
 </html>

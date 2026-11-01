@@ -10,16 +10,24 @@
         header { background-color: #12356b; color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
         header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.9; }
-        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; }
-        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; }
-        nav a:hover { background-color: #2f6fbd; }
-        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: background 0.3s ease; }
+        nav a:hover, nav a.active { background-color: #2f6fbd; }
+        main { max-width: 1100px; width: 100%; margin: 30px auto; padding: 0 20px; }
         section { background-color: white; margin-bottom: 30px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
         h2 { color: #12356b; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        h3 { color: #245aa5; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; }
-        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; }
-        @media (max-width: 768px) { nav { flex-direction: column; text-align: center; } }
+        .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .campus-map { width: 100%; height: 400px; display: block; border: 2px solid #cbd5e1; border-radius: 8px; margin-top: 15px; }
+        .map-link { display: inline-block; margin-top: 12px; }
+        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-direction: column; align-items: stretch; text-align: center; }
+            main { padding: 0 15px; }
+            section { padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -30,13 +38,14 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="services.html" style="background-color: #2f6fbd;">Universities & Courses</a>
+        <a href="services.html" class="active">Universities & Courses</a>
         <a href="enquiry.html">Enquiry</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main>
         <section>
             <h2>Our Guidance Services</h2>
+            <p>Explore university options and course pathways, then use our guidance services to compare study requirements and funding opportunities.</p>
             <div class="grid">
                 <div class="card">
                     <h3>Academic Alignment</h3>
@@ -47,6 +56,18 @@
                     <p>Aggregates live open public funding streams and scholarship windows directly for application placement.</p>
                 </div>
             </div>
+        </section>
+        <section>
+            <h2>Explore University Campuses</h2>
+            <p>Use this map to explore the Gauteng area, home to several South African universities. Check each institution’s official website for campus addresses and current course information.</p>
+            <iframe
+                class="campus-map"
+                title="Map of the Gauteng university area"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=27.75%2C-26.35%2C28.35%2C-25.95&amp;layer=mapnik&amp;marker=-26.19%2C28.00"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a class="map-link" href="https://www.openstreetmap.org/?mlat=-26.19&amp;mlon=28.00#map=10/-26.19/28.00" target="_blank" rel="noopener noreferrer">Open larger map</a>
         </section>
     </main>
     <footer><p>&copy; 2026 Skolify. Developed by Keleboqile Mashigo (st10538157). All rights reserved.</p></footer>

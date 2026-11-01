@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skolify - About Us</title>
     <style>
-        /* Embed layout directly to secure consistency */
         * { box-sizing: border-box; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f4f8; color: #172554; line-height: 1.6; }
         header { background-color: #12356b; color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
         header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.9; }
-        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; }
-        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; }
-        nav a:hover { background-color: #2f6fbd; }
-        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        nav { background-color: #0b2447; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: background 0.3s ease; }
+        nav a:hover, nav a.active { background-color: #2f6fbd; }
+        main { max-width: 1100px; width: 100%; margin: 30px auto; padding: 0 20px; }
         section { background-color: white; margin-bottom: 30px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
         h2 { color: #12356b; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
-        img { max-width: 100%; height: auto; display: block; border-radius: 8px; margin: 20px 0; }
-        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; }
-        @media (max-width: 768px) { nav { flex-direction: column; text-align: center; } }
+        h3 { color: #245aa5; }
+        figure { margin: 20px 0 0; }
+        figure img { width: 100%; height: 360px; object-fit: cover; border-radius: 8px; }
+        figcaption { margin-top: 8px; color: #475569; font-size: 0.9rem; }
+        footer { background-color: #0b2447; color: white; text-align: center; padding: 25px; margin-top: 40px; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-direction: column; align-items: stretch; text-align: center; }
+            main { padding: 0 15px; }
+            section { padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -29,7 +36,7 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html" style="background-color: #2f6fbd;">About Us</a>
+        <a href="about.html" class="active">About Us</a>
         <a href="services.html">Universities & Courses</a>
         <a href="enquiry.html">Enquiry</a>
         <a href="contact.html">Contact</a>
@@ -38,7 +45,11 @@
         <section>
             <h2>Who We Are</h2>
             <p>Skolify is a dedicated portal established to empower South African matriculants with the accurate institutional data, application parameters, and bursary resources required to make informed transitions into higher education streams.</p>
-            <img src="https://picsum.photos" alt="Students studying together representing corporate vision">
+            <p>Our goal is to make planning for life after matric clearer by bringing university options, course information, and funding guidance together in one place. Students can explore possibilities and take the next step with greater confidence.</p>
+            <figure>
+                <img src="https://unsplash.com/photos/seed/skolify-campus/1200/700" alt="Main University Campus Administration Complex & Grounds">
+                <figcaption>Helping students prepare for their next step in higher education.</figcaption>
+            </figure>
         </section>
     </main>
     <footer><p>&copy; 2026 Skolify. Developed by Keleboqile Mashigo (st10538157). All rights reserved.</p></footer>
